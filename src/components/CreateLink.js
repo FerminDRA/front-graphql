@@ -79,7 +79,7 @@ const CreateLink = () => {
               })
             }
             type="text"
-            placeholder="A nombre for the link"
+            placeholder="A nombre for the star"
           />
           <input
             className="mb2"
@@ -91,7 +91,7 @@ const CreateLink = () => {
               })
             }
             type="text"
-            placeholder="The distancia for the link"
+            placeholder="The distancia for the star"
           />
           <input
             className="mb2"
@@ -103,7 +103,7 @@ const CreateLink = () => {
               })
             }
             type="number"
-            placeholder="The radio for the link"
+            placeholder="The radio for the star"
           />
           <input
             className="mb2"
@@ -115,7 +115,7 @@ const CreateLink = () => {
               })
             }
             type="number"
-            placeholder="The rotacion for the link"
+            placeholder="The rotacion for the star"
           />
           <input
             className="mb2"
@@ -127,7 +127,7 @@ const CreateLink = () => {
               })
             }
             type="number"
-            placeholder="The edad for the link"
+            placeholder="The edad for the star"
           />
           <input
             className="mb2"
@@ -139,7 +139,7 @@ const CreateLink = () => {
               })
             }
             type="number"
-            placeholder="The ubicacion for the link"
+            placeholder="The ubicacion for the star"
           />
           <input
             className="mb2"
@@ -151,7 +151,7 @@ const CreateLink = () => {
               })
             }
             type="number"
-            placeholder="The masa for the link"
+            placeholder="The masa for the star"
           />
           <input
             className="mb2"
@@ -163,7 +163,7 @@ const CreateLink = () => {
               })
             }
             type="number"
-            placeholder="The temperatura for the link"
+            placeholder="The temperatura for the star"
           />
           <input
             className="mb2"
@@ -175,7 +175,7 @@ const CreateLink = () => {
               })
             }
             type="text"
-            placeholder="The constelacion for the link"
+            placeholder="The constelacion for the star"
           />
           <input
             className="mb2"
@@ -187,7 +187,7 @@ const CreateLink = () => {
               })
             }
             type="text"
-            placeholder="The color for the link"
+            placeholder="The color for the star"
           />
         </div>
         <button type="submit">Submit</button>
