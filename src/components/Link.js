@@ -5,7 +5,7 @@ const Link = (props) => {
   return (
     <div>
       <div>
-        {link.nombre} ({link.rotacion})
+        {link.nombre} ({link.constelacion})
       </div>
     </div>
   );
