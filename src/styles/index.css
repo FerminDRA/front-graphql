@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, sans-serif;
+  background-image: url('https://www.solofondos.com/wp-content/uploads/2015/11/El-paisaje-de-estrellas.jpg');
+  background-size: cover;
 }
 
 input {

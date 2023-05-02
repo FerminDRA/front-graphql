@@ -18,6 +18,10 @@ const Header = () => {
         >
           submit
         </Link>
+        <div className="ml1">|</div>
+          <Link to="/perfil" className="ml1 no-underline black">
+          Perfil
+        </Link>
       </div>
     </div>
   );

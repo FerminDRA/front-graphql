@@ -36,3 +36,89 @@
     transform: rotate(360deg);
   }
 }
+
+.flex {
+  display: flex;
+}
+
+.pa1 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.orange {
+  background-image: linear-gradient(to bottom, #1d748f, #da39bf);
+
+}
+
+.black {
+  color: black;
+}
+
+.fw7 {
+  font-weight: 700;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-details {
+  flex: 1 1 auto;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-bio {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.profile-stats span:first-child {
+  font-weight: bold;
+  color: #000000;
+}
+
+.imgStar {
+  display: block; /* para que la imagen se muestre como un bloque y se pueda centrar horizontalmente */
+  margin: 0 auto; /* para centrar horizontalmente la imagen */
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
