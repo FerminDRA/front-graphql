@@ -1,10 +1,13 @@
 import { Configuration, OpenAIApi } from "openai";
+import dotenv from 'dotenv';
+dotenv.config();
 
 class ServiceImage003 {
 
   async getDaVinci(data) {
+    const secret = process.env.openKey;
     const configuration = new Configuration({
-        apiKey: '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',
+        apiKey: secret,
       });
     const openai = new OpenAIApi(configuration);
     console.log(configuration);
