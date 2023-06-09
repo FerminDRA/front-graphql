@@ -7,9 +7,15 @@ query{
   estrellas{
     id,
     nombre,
+    radio,
     distancia,
     rotacion,
-    constelacion
+    edad,
+    ubicacion,
+    masa,
+    temperatura,
+    constelacion,
+    color
   }
 }
 `

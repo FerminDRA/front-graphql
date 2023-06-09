@@ -4,6 +4,9 @@ import './styles/index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { setContext } from '@apollo/client/link/context';
+import { AUTH_TOKEN } from './constants';
+import './i18nextConf';
 
 import {
   ApolloProvider,
@@ -13,13 +16,25 @@ import {
 } from '@apollo/client';
 
 const httpLink = createHttpLink({
-  uri: 'https://fermindra-fermindra.cloud.okteto.net/graphql/'
+  uri: 'http://127.0.0.1:8000/graphql/'
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem(AUTH_TOKEN);
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `JWT ${token}` : ''
+    }
+  };
 });
 
 const client = new ApolloClient({
-  link: httpLink,
+  //link: httpLink,
+  link: authLink.concat(httpLink),
   cache: new InMemoryCache()
 });
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
