@@ -1,10 +1,12 @@
 import { useState } from "react";
 //import styles from "./text-davinci-003.css";
 import ServiceDavinci003 from "../services/text-davinci-003/service.davinci.003"
+import { useTranslation } from "react-i18next";
 
 export default function Textdavinci003() {
   const [animalInput, setAnimalInput] = useState("");
   const [result, setResult] = useState();
+  const { t } = useTranslation();
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -35,7 +37,7 @@ export default function Textdavinci003() {
 
   return (
     <div>
-      <h3>Name my pet</h3>
+      <h3>{t("mimascota")}</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation, gql } from '@apollo/client';
+import { AUTH_TOKEN } from '../constants';
 
 const CREATE_LINK_MUTATION = gql`
   mutation PostMutation(
@@ -46,7 +47,14 @@ const CreateLink = () => {
     color:''
   });
 
+  const authToken = localStorage.getItem(AUTH_TOKEN);
+
   const [createLink] = useMutation(CREATE_LINK_MUTATION, {
+    context: {
+      headers: {
+        Authorization: `Bearer ${authToken}`
+      }
+    },
     variables: {
       nombre: formState.nombre,
       distancia: formState.distancia,

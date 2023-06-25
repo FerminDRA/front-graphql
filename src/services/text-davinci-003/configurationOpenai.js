@@ -1,13 +1,11 @@
 import { Configuration, OpenAIApi } from "openai";
-import dotenv from 'dotenv';
-dotenv.config();
 
 export const openaiConfig = {
   getOpenai: function () {
-    const secret = process.env.openKey;
+    const key= process.env.REACT_APP_OPENAI_KEY;
     const configuration = new Configuration({
       
-      apiKey: secret,
+      apiKey: key,
     });
 
     if (!configuration.apiKey) {
