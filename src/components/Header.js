@@ -39,14 +39,6 @@ const Header = () => {
         <Link>
           <MenuDropdown/>
         </Link>
-        {authToken && (
-          <div className="flex">
-            <div className="ml1">|</div>
-            <Link to="/login" className="ml1 no-underline black" >
-              submit
-            </Link>
-          </div>
-        )}
 
         <div className="ml1">|</div>
         <div className="flex flex-fixed">

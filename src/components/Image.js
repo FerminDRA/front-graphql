@@ -1,11 +1,14 @@
 import { useState } from "react";
 //import styles from "./text-davinci-003.css";
 import ServiceImage003 from "../services/text-davinci-003/service.image.003";
+import { useTranslation } from "react-i18next";
+
 
 export default function Textdavinci003() {
   const [animalInput, setAnimalInput] = useState("");
   const [result, setResult] = useState();
   const [result2, setResult2] = useState();
+  const { t } = useTranslation();
 
 
   async function onSubmit(event) {
@@ -38,7 +41,7 @@ export default function Textdavinci003() {
 
   return (
     <div>
-      <h3>Imagen</h3>
+      <h3>{t("imagen")}</h3>
       <form onSubmit={onSubmit}>
         <input
           type="text"
