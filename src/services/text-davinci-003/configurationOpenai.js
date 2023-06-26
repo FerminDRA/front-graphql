@@ -2,7 +2,7 @@ import { Configuration, OpenAIApi } from "openai";
 
 export const openaiConfig = {
   getOpenai: function () {
-    const key= process.env.REACT_APP_OPENAI_KEY;
+    const key= "sk-"+process.env.REACT_APP_OPENAI_KEY;
     const configuration = new Configuration({
       
       apiKey: key,
