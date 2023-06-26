@@ -5,7 +5,7 @@ export const openaiConfig = {
     const key= process.env.REACT_APP_OPENAI_KEY;
     const configuration = new Configuration({
       
-      apiKey: key,
+      apiKey: "sk-"+key,
     });
 
     if (!configuration.apiKey) {
