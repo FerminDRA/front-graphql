@@ -5,7 +5,37 @@ const Link = (props) => {
   return (
     <div>
       <div>
-        {link.nombre} ({link.constelacion})
+        <h3>Estrella</h3>
+      </div>
+      <div>
+        Nombre: {link.nombre}
+      </div>
+      <div>
+        Distancia: {link.distancia}
+      </div>
+      <div>
+        Radio: {link.radio}
+      </div>
+      <div>
+        Rotacion: {link.rotacion}
+      </div>
+      <div>
+        Edad: {link.edad}
+      </div>
+      <div>
+        Ubicacion: {link.ubicacion}
+      </div>
+      <div>
+        Masa: {link.masa}
+      </div>
+      <div>
+        Temperatura: {link.temperatura}
+      </div>
+      <div>
+        Constelacion: {link.constelacion}
+      </div>
+      <div>
+        Color: {link.color}
       </div>
     </div>
   );
